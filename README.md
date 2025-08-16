@@ -3,5 +3,6 @@ Neste repositório, estarei mantendo todos os desafios de projetos da plataforma
 
 ## Possui arquivos dos seguintes bootcamps:
 * Java com Spring Boot
+* Front End do Zero
 
 > Mais bootcamps serão incluídos conforme eu for realizando-os.
