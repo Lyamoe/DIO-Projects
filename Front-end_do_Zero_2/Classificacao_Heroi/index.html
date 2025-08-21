@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Classificador de Nível de Herói</title>
+		<link rel="stylesheet" href="src/style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Classificador de Nível de Herói</h1>
+			<p>Este script classifica o nível de um herói com base na experiência (XP) fornecida.</p>
+			<p>Os níveis são: Ferro, Bronze, Prata, Ouro, Platina, Ascendente, Imortal e Radiante.</p>
+			<p>Digite o nome do herói e a quantidade de experiência (XP) para ver o resultado.</p>
+			<form action="">
+				<label for="nomeHeroi">Nome do Herói:</label>
+				<input type="text" id="nomeHeroi" name="nomeHeroi" required />
+				<br />
+				<label for="xpAtual">Experiência (XP):</label>
+				<input type="number" id="xpAtual" name="xpAtual" required />
+				<br />
+				<button type="button" onclick="classificarHeroi()">Classificar Herói</button>
+			</form>
+			<p id="resultado"></p>
+		</main>
+		<script src="src/classificador.js"></script>
+	</body>
+</html>
