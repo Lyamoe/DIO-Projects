@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<!-- * links externos -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,15 +22,15 @@
         <main class="container">
             <section class="pop-up" id="pop-up_start">
                 <h1 class="pop-up_title">Detona Ralph</h1>
-                <h2>Select the duration</h2>
+                <h2>Selecione a duração</h2>
                 <div class="pop-up_button-group">
                     <button onclick="setTime(15)">15s</button>
                     <button onclick="setTime(30)">30s</button>
                     <button onclick="setTime(45)">45s</button>
                     <button onclick="setTime(60)">60s</button>
                 </div>
-                <p>Time selected: <span id="pop-up_time-span">30</span> seconds</p>
-                <button class="pop-up_start-game" onclick="initialize()">Start</button>
+                <p>Tempo selecionado: <span id="pop-up_time-span">30</span> segundos</p>
+                <button class="pop-up_start-game" onclick="initialize()">Jogar</button>
             </section>
             <section class="menu">
                 <div class="menu_time">
@@ -64,9 +64,9 @@
                 </div>
             </section>
             <section style="display: none;" class="pop-up" id="pop-up_game-over">
-                <h1 class="pop-up_title">Game Over!</h1>
-                <h2>You have scored <span id="final-score">0</span></h2>
-                <button class="pop-up_start-game" onclick="openStartPopup()">Restart</button>
+                <h1 class="pop-up_title">Fim de jogo!</h1>
+                <h2>Sua pontuação final foi <span id="final-score">0</span></h2>
+                <button class="pop-up_start-game" onclick="openStartPopup()">Jogar novamente</button>
             </section>
         </main>
         <script defer src="src/script/engine.js"></script>

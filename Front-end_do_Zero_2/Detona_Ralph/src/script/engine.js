@@ -116,7 +116,6 @@ function gameOver() {
 }
 
 function initialize() {
-	resetGameState();
 	document.querySelectorAll(".pop-up").forEach((el) => {
 		el.style.display = "none";
 	});
