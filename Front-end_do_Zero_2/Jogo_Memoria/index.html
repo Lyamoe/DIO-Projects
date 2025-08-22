@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo Da Memória</title>
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+
+  <body>
+    <section class="container" id="container_start">
+      <h1 class="container_title">Jogo da memória</h1>
+      <h2>Número de cartas</h2>
+      <div class="container_button-group">
+        <button onclick="qtCards(8)">8</button>
+        <button onclick="qtCards(16)">16</button>
+        <button onclick="qtCards(24)">24</button>
+        <button onclick="qtCards(32)">32</button>
+      </div>
+      <h2>Tempo por rodada</h2>
+      <div class="container_button-group">
+        <button onclick="setTime(null)">sem tempo</button>
+        <button onclick="setTime(30)">30s</button>
+        <button onclick="setTime(60)">60s</button>
+        <button onclick="setTime(120)">120s</button>
+      </div>
+      <p>Cartas: <span id="container_card_qt">16</span></p> 
+      <p>Tempo: <span id="container_time-span">30</span> segundos</p>
+      <button class="container_start-game" onclick="initialize()">Jogar</button>
+    </section>
+    <main class="container" id="main-game" style="display: none">
+      <section>
+        <h1>JOGO DA MEMÓRIA</h1>
+        <div class="game"></div>
+        <button class="reset" onclick="window.location.reload()">
+          RESET GAME 
+        </button>
+      </section>
+    </main>
+    <section style="display: none" class="container" id="container_game-over">
+      <h1 class="container_title">Fim de jogo!</h1>
+      <h2>Sua pontuação final foi <span id="final-score">0</span></h2>
+      <button class="container_start-game" onclick="openStartPopup()">
+        Jogar novamente
+      </button>
+    </section>
+
+    <script src="./src/scripts/engine.js" defer></script>
+  </body>
+</html>
